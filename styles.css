@@ -2,37 +2,26 @@
     box-sizing: border-box;
 }
 
-/* Style the search field */
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
+body {
+    padding: 10%;
+    margin: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
 }
 
-/* Style the submit button */
-form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    /* Prevent double borders */
-    cursor: pointer;
+h1 {
+    font-weight: bold;
 }
 
-form.example button:hover {
-    background: #0b7dda;
+/*fills entire screen*/
+form {
+    border: 1px solid black;
+    height: 150px;
+
+
 }
 
-/* Clear floats */
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
+label {
+    position: relative
 }
