@@ -13,47 +13,71 @@
 
 <body>
     <h1>Github Report</h1>
-    <form class="search">
-        <label class="inputs">
-            <h3>Github Username</h3>
-            <span class="label-tag"></span>
-            <input placeholder="Search" type="text" value="">
-            <span class="search-highlight"></span>
-            <span class="search-highlight-second"></span>
-        </label>
-        <button type="submit">Generien</button>
-    </form>
-    <article>
+    <div class="container">
+        <form class="example" action="action_page.php">
+            <div>
+                <label for="username" id="username">Github Username</label>
+            </div>
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search">Generate</i></button>
+        </form>
+    </div>
+    <article class="linc">
         <h2>[Github Username]</h2>
         <p>A passionate Github User</p>
         <a href="https://www.example.com">https://www.example.com</a>
-        <p>On GitHub since [YEAR], [USERNAME] is a developer based in [CITY], [COUNTRY] with [XXX] public repositories
+        <p>On GitHub since [YEAR], [USERNAME] is a developer based in [CITY], [COUNTRY] with [XXX] public
+            repositories
             and [XX] followers.</p>
-
-        <h3>Languages</h3>
-
-        <span>[Lang][xx]%</span>
+        <section>
+            <h3>Languages</h3>
+            <table>
+                <tr>
+                    <td>[Lang] [xx]%</td>
+                    <td>[Lang] [xx]%</td>
+                    <td>[Lang] [xx]%</td>
+                    <td>[Lang] [xx]%</td>
+                </tr>
+                <tr>
+                    <td>[Lang] [xx]%</td>
+                    <td>[Lang] [xx]%</td>
+                    <td>[Lang] [xx]%</td>
+                    <td>[Lang] [xx]%</td>
+                </tr>
+            </table>
+        </section>
         <h3>Popular Repositories</h3>
-        <span>[Repo Name]</span> <span>[Year From]-[Year to]</span>
-        <span>[Lang] - [Repo rights]</span>
-        <p>[description]
-            This repository has [XXX] stars and [XXX] forks. If you would like more information about this repository
-            and my contributed code, please visit [the repo] on GitHub.
-        </p>
-        <span>[Repo Name]</span> <span>[Year From]-[Year to]</span>
-        <span>[Lang] - [Repo rights]</span>
-        <span>[description]</span>
-        <p>This repository has [XXX] stars and [XXX] forks. If you would like more information about this repository
-            and my contributed code, please visit [the repo] on GitHub.
-        </p>
-        <span>[Repo Name]</span> <span>[Year From]-[Year to]</span>
-        <span>[Lang] - [Repo rights]</span>
-        <span>[description]</span>
-        <p>This repository has [XXX] stars and [XXX] forks. If you would like more information about this repository
-            and my contributed code, please visit [the repo] on GitHub.
-        </p>
+        <section>
+            <span>[Repo Name]</span> <span>[Year From]-[Year to]</span>
+            <span>[Lang] - [Repo rights]</span>
+            <p>[description]
+                This repository has [XXX] stars and [XXX] forks. If you would like more information about this
+                repository
+                and my contributed code, please visit [the repo] on GitHub.
+            </p>
+        </section>
+        <hr>
+        <section>
+            <span>[Repo Name]</span> <span>[Year From]-[Year to]</span>
+            <span>[Lang] - [Repo rights]</span>
+            <p>[description]
+                This repository has [XXX] stars and [XXX] forks. If you would like more information about this
+                repository
+                and my contributed code, please visit [the repo] on GitHub.
+            </p>
+        </section>
+        <hr>
+        <section>
+            <span>[Repo Name]</span> <span>[Year From]-[Year to]</span>
+            <span>[Lang] - [Repo rights]</span>
+            <p>[description]
+                This repository has [XXX] stars and [XXX] forks. If you would like more information about this
+                repository
+                and my contributed code, please visit [the repo] on GitHub.
+            </p>
+        </section>
+        <hr>
     </article>
-
 
 </body>
 
