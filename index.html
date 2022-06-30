@@ -17,9 +17,10 @@
     <form method="post" action="#crunch">
         <label for="username" id="username">Github Username</label>
 
-        <input type="text" placeholder="Search.." name="search">
+        <input type="text" placeholder="Search.." id="message" name="search">
 
-        <button type="submit">Generate</button>
+        <!-- 1. Pass an event to our method. Read: https://developer.mozilla.org/en-US/docs/Web/Events -->
+        <button onclick="generateSearch(event)" id="result" type="submit">Generate</button>
     </form>
 
     <article class="container">
@@ -109,8 +110,11 @@
             </span></p>
 
         <hr>
-    </article>
 
+
+    </article>
+    <!-- 2. Import JS file -->
+    <script src="index.js" async defer></script>
 </body>
 
 

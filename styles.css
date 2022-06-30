@@ -29,6 +29,12 @@ form {
     height: 160px;
 }
 
+#username {
+    display: flex;
+    font-weight: bold;
+    align-items: flex-start;
+}
+
 input[type=text] {
     padding: 10px;
 
@@ -66,6 +72,9 @@ button {
 
 }
 
+h2 {
+    font-weight: bold;
+}
 
 .container {
     border: 1px solid rgb(174, 172, 172);
@@ -82,6 +91,8 @@ button {
 
 
 }
+
+
 
 progress {
     border: 1px solid rgb(236, 236, 236);
@@ -117,6 +128,12 @@ progress::-webkit-progress-bar {
 
 a {
     color: red;
+}
+
+a:hover {
+    color: rgb(230, 0, 255);
+    font-size: 18px;
+
 }
 
 #check {
