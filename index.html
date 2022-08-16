@@ -14,25 +14,26 @@
 <body>
     <h1>Github Report</h1>
 
-    <form method="post" action="#crunch">
+    <form method="get" id="signup">
         <label for="username" id="username">Github Username</label>
 
-        <input type="text" placeholder="Search.." id="message" name="search">
+        <input type="text" placeholder="Search.." id="message" name="search" required>
 
         <!-- 1. Pass an event to our method. Read: https://developer.mozilla.org/en-US/docs/Web/Events -->
-        <button onclick="generateSearch(event)" id="result" type="submit">Generate</button>
+        <button id="result" type="submit">Generate</button>
     </form>
 
-    <article class="container">
-        <h2>[Github Username]</h2>
+    <section class="container">
+        <h2 id="user">[Github Username]</h2>
         <h3 id="firstheading">A passionate Github User</h3>
         <a href="https://www.example.com">https://www.example.com</a>
-        <p>On GitHub since [YEAR], [USERNAME] is a developer based in [CITY], [COUNTRY] with <span>[XXX] public
+        <p id="firstP">On GitHub since [YEAR], [USERNAME] is a developer based in [CITY], [COUNTRY] with <span>[XXX]
+                public
                 repositories </span>
             and <span>[XX] followers.</span></p>
 
         <h3>Languages</h3>
-        <div class="container1">
+        <div class="container1" id="container">
             <div>
                 <label for="file"><i>[Lang]</i> [XX]%</label>
 
@@ -75,18 +76,39 @@
             </div>
         </div>
         <h3>Popular Repositories</h3>
-        <div class="container2">
-            <span id="left">[Repo Name]</span> <span id="right">[Year From]-[Year to]</span>
+        <div id="entry">
+            <div id="1234">
+                <span id="left">[REPO NAME]</span>
+            </div>
         </div>
-        <br>
-        <span id="rights">[Lang] - [Repo rights]</span>
-        <p>[description]</p>
-        <p> This repository has [XXX] stars and [XXX] forks. If you would like more information about this
-            repository
-            and my contributed code, please visit <span id="check">[the repo] on GitHub.
-            </span></p>
+
+        <div id="0">
+            <span id="left">[Repo Name]</span> <span id="right">[Year From]-[Year to]</span>
+            <br>
+            <span id="rights">[Lang] - [Repo rights]</span>
+            <p>[description]</p>
+            <p id="firstRepo"> This repository has [XXX] stars and [XXX] forks. If you would like more information about
+                this
+                repository
+                and my contributed code, please visit <span id="check">[the repo]</span> on GitHub.
+            </p>
+        </div>
 
         <hr>
+        <div id="1">
+            <span id="left">[Repo Name]</span> <span id="right">[Year From]-[Year to]</span>
+            <br>
+            <span id="rights">[Lang] - [Repo rights]</span>
+            <p>[description]</p>
+            <p> This repository has [XXX] stars and [XXX] forks. If you would like more information about this
+                repository
+                and my contributed code, please visit <span id="mark">[the repo] on GitHub.
+                </span>
+            </p>
+        </div>
+
+        <hr>
+
 
         <span id="left">[Repo Name]</span> <span id="right">[Year From]-[Year to]</span>
         <br>
@@ -94,25 +116,13 @@
         <p>[description]</p>
         <p> This repository has [XXX] stars and [XXX] forks. If you would like more information about this
             repository
-            and my contributed code, please visit <span id="mark">[the repo] on GitHub.
-            </span></p>
+            and my contributed code, please visit <span id="mark">[the repo]</span> on GitHub.
+        </p>
 
         <hr>
 
 
-        <span id="left">[Repo Name]</span> <span id="right">[Year From]-[Year to]</span>
-        <br>
-        <span id="rights">[Lang] - [Repo rights]</span>
-        <p>[description]</p>
-        <p> This repository has [XXX] stars and [XXX] forks. If you would like more information about this
-            repository
-            and my contributed code, please visit <span id="mark">[the repo] on GitHub.
-            </span></p>
-
-        <hr>
-
-
-    </article>
+    </section>
     <!-- 2. Import JS file -->
     <script src="index.js" async defer></script>
 </body>
