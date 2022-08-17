@@ -10,6 +10,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     //select the input element through form.elements save to variable "username"
     const username = form.elements['search'].value;
+    event.target.reset();
     // console.log(username)
     //take our variable and insert it into our fetch url using string template literal
     fetch(`https://api.github.com/users/${username}`)
@@ -17,14 +18,13 @@ form.addEventListener('submit', (event) => {
             return data.json();
         })
         .then(data => {
-            const { stargazers_count, forks_count, full_name, html_url } = data;
             const { created_at, name, location, public_repos, followers } = data;
             console.log('user:', { data })
             renderUsername(data?.login || 'NOT FOUND')
             renderBio(data?.bio)
             newUrl(data?.url)
             renderParagraph(created_at, name, location, public_repos, followers)
-            renderPopRepos(stargazers_count, forks_count, full_name, html_url)
+
         })
         .catch(err => {
             console.log(err);
@@ -71,5 +71,7 @@ const renderPopRepos = (stargazers_count, forks_count, full_name, html_url) => {
     const firstRepo = document.getElementById('firstRepo');
     if (repoParagraph) firstRepo.innerHTML = repoParagraph;
 }
+
+
 
 
